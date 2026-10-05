@@ -1,0 +1,91 @@
+\documentclass{article}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{enumitem}
+
+\title{Homework 1}
+\author{Junwoo Baek}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\section*{Problem 1}
+
+\subsection*{Problem Statement}
+Let $a$ and $b$ be integers, Prove that if $2 + a$ and $35 - b$ are divisible by $11$, then $a + b$ is divisible by $11$.
+
+\subsection*{Solution}
+
+\begin{proof}
+	Since $2 + a$ and $35 - b$ are divisible by $11$, it can be represented with the following equations:
+
+	\begin{align*}
+		2 + a = 11 \cdot p, \qquad p \in \mathbb{Z} \\
+		35 - b = 11 \cdot q, \qquad q \in \mathbb{Z}
+	\end{align*}
+
+	where $p$ and $q$ are integers.
+
+	Each equations can be rearranged as follows.
+
+	\begin{align*}
+		a = 11 \cdot p - 2 \\
+		b = 35 - 11 \cdot q
+	\end{align*}
+
+	The sum $a + b$ is then as follows.
+
+	\begin{align*}
+		a + b & = 11 p - 2 + 35 - 11q           &                              \\
+		      & = 11 \cdot (p - q) + 33         &                              \\
+		      & = 11 \cdot (p - q) + 11 \cdot 3 &                              \\
+		      & = 11 \cdot (p - q + 3)          &                              \\
+		      & = 11 \cdot k                    & k = p - q + 3 \in \mathbb{Z}
+	\end{align*}
+
+	$k$ is guaranteed to be an integer since it is a sum of integers.
+	Since $a + b$ is a product of $11$ and some integer $k$, $a + b$ is divisible by $11$.
+
+\end{proof}
+
+\section*{Problem 2}
+
+Textbook p15 (15.c, 15.e)
+
+\subsection*{Problem Statement}
+
+Use Euclidean algorithm to find:
+\begin{enumerate}[label=(\alph*)]
+	\item (1003, 456)
+	\item (5858, 1436)
+\end{enumerate}
+
+\subsection*{Solution}
+
+\subsubsection*{(a)}
+
+\begin{align*}
+	(1003, 456) & = (456, 91) & 1003 & = 456 \times 2 + 91 \\
+	            & = (91, 1)   & 456  & = 91 \times 5 + 1   \\
+	            & = (1, 0)    & 91   & = 1 \times 91 + 0   \\
+	            & = 1                                      \\
+\end{align*}
+
+Answer: $(1003, 456) = 1$
+
+\subsubsection*{(b)}
+
+\begin{align*}
+	(5858, 1436) & = (1436, 114) & 5858 & = 1436 \times 4 + 114 \\
+	             & = (114, 68)   & 1436 & = 114 \times 12 + 68  \\
+\end{align*}
+
+\section*{Problem 3}
+\section*{Problem 4}
+\section*{Problem 5}
+\section*{Problem 6}
+\section*{Problem 7}
+\end{document}
