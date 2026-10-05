@@ -128,7 +128,74 @@ $$
 $$
 
 \section*{Problem 4}
+
+\subsection*{Problem Statement}
+
+Show that for any positive integer $n$, the fraction $\frac{12 n + 1}{30n + 2}$ cannot be reduced.
+
+\subsection*{Solution}
+
+\begin{proof}
+	For a fraction to be non-reducible, the denominator and the numerator must be coprime. In other words, the GCD of the denominator and the numerator must be 1.
+
+	The problem may be reformulated as follows: show that for any positive integer $n$, $(12n + 1), 30n + 2$ is 1. Note that since $n$ is a positive integer, $12n + 1$ is always less than $30n + 2$.
+
+	Applying the Euclidean algorithm results in the following:
+
+	\begin{align*}
+		(30n + 2, 12n + 1) & = (12n + 1, 6n) \\
+		                   & = (6n, 1)       \\
+		                   & = (1, 0)        \\
+		                   & = 1
+	\end{align*}
+
+	From the above result, it is shown that the GCD of $30n + 2$ and $12n + 1$ is 1, meaning that $30n + 2$ and $12n + 1$ are coprime. Therefore, the fraction $\frac{12n + 1}{30n + 2}$ cannot be reduced for any positive integer $n$
+
+\end{proof}
+
 \section*{Problem 5}
+
+\subsection*{Problem Statement}
+
+Find $(2^{100} - 1, 2^{120} - 1)$.
+
+\subsection*{Solution}
+
+
+
 \section*{Problem 6}
+
+\subsection*{Problem Statement}
+\subsection*{Solution}
+
 \section*{Problem 7}
+
+\subsection*{Problem Statement}
+\subsection*{Solution}
+
+\section*{Problem 8}
+
+\subsection*{Problem Statement}
+\subsection*{Solution}
+
+\section*{Problem 9}
+
+\subsection*{Problem Statement}
+\subsection*{Solution}
+
+\section*{Problem 10}
+
+\subsection*{Problem Statement}
+\subsection*{Solution}
+
+\section*{Problem 11}
+
+\subsection*{Problem Statement}
+\subsection*{Solution}
+
+\section*{Problem 12}
+
+\subsection*{Problem Statement}
+\subsection*{Solution}
+
 \end{document}

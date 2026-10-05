@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1791218334.97391 "main.tex" "main.pdf" "main" 1791218335.15113 0
+["pdflatex"] 1791230140.86778 "main.tex" "main.pdf" "main" 1791230141.09605 0
   "/nix/store/d8ylghnk2baq62wbgpagnbsbi9dzgmgk-texlive-combined-full-2025-final-texmfdist/fonts/map/fontname/texfonts.map" 1 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/nix/store/d8ylghnk2baq62wbgpagnbsbi9dzgmgk-texlive-combined-full-2025-final-texmfdist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1 1004 54797486969f23fa377b128694d548df ""
   "/nix/store/d8ylghnk2baq62wbgpagnbsbi9dzgmgk-texlive-combined-full-2025-final-texmfdist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -26,9 +26,11 @@
   "/nix/store/d8ylghnk2baq62wbgpagnbsbi9dzgmgk-texlive-combined-full-2025-final-texmfdist/fonts/type1/public/amsfonts/cm/cmbx10.pfb" 1 34811 78b52f49e893bcba91bd7581cdc144c0 ""
   "/nix/store/d8ylghnk2baq62wbgpagnbsbi9dzgmgk-texlive-combined-full-2025-final-texmfdist/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1 32080 340ef9bf63678554ee606688e7b5339d ""
   "/nix/store/d8ylghnk2baq62wbgpagnbsbi9dzgmgk-texlive-combined-full-2025-final-texmfdist/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
+  "/nix/store/d8ylghnk2baq62wbgpagnbsbi9dzgmgk-texlive-combined-full-2025-final-texmfdist/fonts/type1/public/amsfonts/cm/cmmi7.pfb" 1 36281 c355509802a035cadc5f15869451dcee ""
   "/nix/store/d8ylghnk2baq62wbgpagnbsbi9dzgmgk-texlive-combined-full-2025-final-texmfdist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1 35752 024fb6c41858982481f6968b5fc26508 ""
   "/nix/store/d8ylghnk2baq62wbgpagnbsbi9dzgmgk-texlive-combined-full-2025-final-texmfdist/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1 32722 d7379af29a190c3f453aba36302ff5a9 ""
   "/nix/store/d8ylghnk2baq62wbgpagnbsbi9dzgmgk-texlive-combined-full-2025-final-texmfdist/fonts/type1/public/amsfonts/cm/cmr17.pfb" 1 32362 179c33bbf43f19adbb3825bb4e36e57a ""
+  "/nix/store/d8ylghnk2baq62wbgpagnbsbi9dzgmgk-texlive-combined-full-2025-final-texmfdist/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1 32762 224316ccc9ad3ca0423a14971cfa7fc1 ""
   "/nix/store/d8ylghnk2baq62wbgpagnbsbi9dzgmgk-texlive-combined-full-2025-final-texmfdist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "/nix/store/d8ylghnk2baq62wbgpagnbsbi9dzgmgk-texlive-combined-full-2025-final-texmfdist/fonts/type1/public/amsfonts/cm/cmti10.pfb" 1 37944 359e864bd06cde3b1cf57bb20757fb06 ""
   "/nix/store/d8ylghnk2baq62wbgpagnbsbi9dzgmgk-texlive-combined-full-2025-final-texmfdist/fonts/type1/public/amsfonts/symbols/msbm10.pfb" 1 34694 ad62b13721ee8eda1dcc8993c8bd7041 ""
@@ -49,8 +51,8 @@
   "/nix/store/z9yhipqn2m58gl4v1pcazp105nn8pmvn-texlive-combined-full-2025-final/share/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1 5541495 b90496707f78f5dab12194e50c20f288 ""
   "/nix/store/z9yhipqn2m58gl4v1pcazp105nn8pmvn-texlive-combined-full-2025-final/share/texmf-var/web2c/pdftex/pdflatex.fmt" 1 3637261 8a235ee3f1165e985c92e376c7828715 ""
   "/nix/store/z9yhipqn2m58gl4v1pcazp105nn8pmvn-texlive-combined-full-2025-final/share/texmf-var/web2c/texmf.cnf" 1 44359 c02867b21f75edad37771badf66f5da7 ""
-  "main.aux" 1791218335.13084 32 ab05033ccbb38b00a31b200ccedf8001 "pdflatex"
-  "main.tex" 1791218334.40066 3367 7bab3e10f313282abd2671563e4f7ace ""
+  "main.aux" 1791230141.06714 32 2d1df76398b3c48c6419a45a7331db2d "pdflatex"
+  "main.tex" 1791230140.36287 4986 c273794eeb380c0e083f72c02fa9a4e2 ""
   (generated)
   "main.aux"
   "main.log"

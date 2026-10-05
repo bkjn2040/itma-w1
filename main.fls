@@ -1,4 +1,4 @@
-PWD /home/jun2040/Documents/uw-exchange/intro-to-modern-algebra/homework/week1
+PWD /home/jun2040/Documents/itma-w1
 INPUT /nix/store/z9yhipqn2m58gl4v1pcazp105nn8pmvn-texlive-combined-full-2025-final/share/texmf-var/web2c/texmf.cnf
 INPUT /nix/store/z9yhipqn2m58gl4v1pcazp105nn8pmvn-texlive-combined-full-2025-final/share/texmf-var/web2c/pdftex/pdflatex.fmt
 INPUT main.tex
@@ -77,9 +77,11 @@ INPUT main.aux
 INPUT /nix/store/d8ylghnk2baq62wbgpagnbsbi9dzgmgk-texlive-combined-full-2025-final-texmfdist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 INPUT /nix/store/d8ylghnk2baq62wbgpagnbsbi9dzgmgk-texlive-combined-full-2025-final-texmfdist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 INPUT /nix/store/d8ylghnk2baq62wbgpagnbsbi9dzgmgk-texlive-combined-full-2025-final-texmfdist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
+INPUT /nix/store/d8ylghnk2baq62wbgpagnbsbi9dzgmgk-texlive-combined-full-2025-final-texmfdist/fonts/type1/public/amsfonts/cm/cmmi7.pfb
 INPUT /nix/store/d8ylghnk2baq62wbgpagnbsbi9dzgmgk-texlive-combined-full-2025-final-texmfdist/fonts/type1/public/amsfonts/cm/cmr10.pfb
 INPUT /nix/store/d8ylghnk2baq62wbgpagnbsbi9dzgmgk-texlive-combined-full-2025-final-texmfdist/fonts/type1/public/amsfonts/cm/cmr12.pfb
 INPUT /nix/store/d8ylghnk2baq62wbgpagnbsbi9dzgmgk-texlive-combined-full-2025-final-texmfdist/fonts/type1/public/amsfonts/cm/cmr17.pfb
+INPUT /nix/store/d8ylghnk2baq62wbgpagnbsbi9dzgmgk-texlive-combined-full-2025-final-texmfdist/fonts/type1/public/amsfonts/cm/cmr7.pfb
 INPUT /nix/store/d8ylghnk2baq62wbgpagnbsbi9dzgmgk-texlive-combined-full-2025-final-texmfdist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 INPUT /nix/store/d8ylghnk2baq62wbgpagnbsbi9dzgmgk-texlive-combined-full-2025-final-texmfdist/fonts/type1/public/amsfonts/cm/cmti10.pfb
 INPUT /nix/store/d8ylghnk2baq62wbgpagnbsbi9dzgmgk-texlive-combined-full-2025-final-texmfdist/fonts/type1/public/amsfonts/symbols/msbm10.pfb
