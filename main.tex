@@ -161,7 +161,34 @@ Find $(2^{100} - 1, 2^{120} - 1)$.
 
 \subsection*{Solution}
 
+Let $q \in \mathbb{Z}^+$ be the GCD of $2^{100} - 1$ and $2^{120} - 1$. This can be represented as the following.
 
+\begin{align*}
+	(2^{100} - 1) \bmod q & \equiv 0 \bmod q \\
+	(2^{120} - 1) \bmod q & \equiv 0 \bmod q
+\end{align*}
+
+By modulus arithmetic, the relations can be rearranged as following.
+
+\begin{align*}
+	2^{100} \bmod q \equiv 1 \bmod q \\
+	2^{120} \bmod q \equiv 1 \bmod q
+\end{align*}
+
+Then, the two relations can be combined.
+
+\begin{align*}
+	2^{100} \bmod q \equiv 2^{120} \bmod q \\
+\end{align*}
+
+Divide both sides by $2^{100} \bmod q$ and rearrange.
+
+\begin{align*}
+	 & 2^{20} \bmod q \equiv 1 \bmod q       \\
+	 & (2^{20} - 1) \bmod q \equiv 0 \bmod q
+\end{align*}
+
+$q$ must divide $2^{20} - 1$. The largest number that can achieve this is $2^{20} -1$. Therefore, the GCD of $(2^{100} - 1, 2^{120} - 1)$ is $2^{20} -1$.
 
 \section*{Problem 6}
 
