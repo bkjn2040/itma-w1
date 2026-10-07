@@ -304,8 +304,21 @@ Let $p$ be prime and $1 \leq k < p$. Prove that $p$ divides the binomial coeffic
 
 \section*{Problem 10}
 
+Textbook p24 (32)
+
 \subsection*{Problem Statement}
+
+Prove that there are infinitely many primes.
+
 \subsection*{Solution}
+
+\begin{proof}
+	Assume that there are finitely many primes. Let these primes be \\ $p_1, p_2, \ldots, p_k$.
+
+	Consider $n = p_1 p_2 \ldots p_k + 1$. By division algorithm, $n = mq + r$ for some integer $m$ where $q = p_1 p_2 \ldots p_k$ and $r = 1$. This means that $n$ is not divisible by $p_i$ for all $i$ since $r \neq 0$. Since $p_i$ are primes for all $i$, it does not have any factors besides 1 and itself. By extension, all integers less than $n$ cannot divide $n$. Therefore, $n$ is a prime. This is a contradiction.
+
+	The above logic applies to any sets of prime by induction. Therefore, there are infinitely many primes.
+\end{proof}
 
 \section*{Problem 11}
 
