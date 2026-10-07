@@ -278,8 +278,29 @@ If $c^2 = ab$ and $(a, b) = 1$, where $a, b, c$ are positive integers, prove tha
 
 \section*{Problem 9}
 
+Textbook p24 (25)
+
 \subsection*{Problem Statement}
+
+Let $p$ be prime and $1 \leq k < p$. Prove that $p$ divides the binomial coefficient $\binom{p}{k}$.
+
 \subsection*{Solution}
+
+\begin{proof}
+	Recall definition of binomial coefficient.
+
+	$$
+		\binom{p}{k} = \frac{p!}{k!(p - k)!}
+	$$
+
+	Rearrange the equation.
+
+	$$
+		p! = \binom{p}{k} k! (p - k)!
+	$$
+
+	The left-hand side is divisible by $p$. By Euclid's Lemma, one of two terms $\binom{p}{k}$ and $k! (p - k)!$ must be divisible by $p$. However, the second term is not divisible by $p$, since $k < p$ and $p - k < p$. Therefore, $\binom{p}{k}$ must be the term divisible by $p$.
+\end{proof}
 
 \section*{Problem 10}
 
