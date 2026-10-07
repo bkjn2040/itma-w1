@@ -205,7 +205,6 @@ First, we prove that if a positive integer is divisible by 9, its sum of digits 
 \begin{proof}
 	Let $d_0, d_1, d_2, \ldots, d_{n-1}$ be the digits of a $n$ digit positive number $k$ where $k = d_0 + 10^1 \cdot d_1 + 10^2 \cdot d_2 + \ldots + 10^{n-1} \cdot d_{n-1}$. We would like to prove that if 9 divides $k$, 9 divides sum of $d_0, d_1, d_2, \ldots, d_{n-1}$.
 
-
 	$k$ can be reformulated as follows:
 
 	\begin{align*}
@@ -218,9 +217,9 @@ First, we prove that if a positive integer is divisible by 9, its sum of digits 
 	By factoring $10^i - 1$, $k$ can be further reformulated as follows:
 
 	\begin{align*}
-		k & = \sum_{i=0}^{n-1}{d_i} + \sum_{i=0}^{n-1}{(10^i - 1) \cdot d_i}                                          \\
-		  & = \sum_{i=0}^{n-1}{d_i} + \sum_{i=0}^{n-1}{(10 - 1)(10^{i-1} + 10^{i-2} + \ldots + 10^{1} + 1) \cdot d_i} \\
-		  & = \sum_{i=0}^{n-1}{d_i} + 9 \sum_{i=0}^{n-1}{(10^{i-1} + 10^{i-2} + \ldots + 10^{1} + 1) \cdot d_i}       \\
+		k & = \sum_{i=0}^{n-1}{d_i} + \sum_{i=1}^{n-1}{(10^i - 1) \cdot d_i}                                          \\
+		  & = \sum_{i=0}^{n-1}{d_i} + \sum_{i=1}^{n-1}{(10 - 1)(10^{i-1} + 10^{i-2} + \ldots + 10^{1} + 1) \cdot d_i} \\
+		  & = \sum_{i=0}^{n-1}{d_i} + 9 \sum_{i=1}^{n-1}{(10^{i-1} + 10^{i-2} + \ldots + 10^{1} + 1) \cdot d_i}       \\
 	\end{align*}
 
 	Now $k$ is in the form $k = ab + r$, where $r = \sum_{i=0}^{n-1}{d_i}$, $a = 9$, and $b = \sum_{i=0}^{n-1}{(10^{i-1} + 10^{i-2} + \ldots + 10^{1} + 1) \cdot d_i}$. Since 9 divides $k$, 9 also must divide $r$, which is the sum of digits. Therefore, if a positive integer is divisible by 9, sum of its digits are also divisible by 9.
@@ -267,13 +266,18 @@ If $c^2 = ab$ and $(a, b) = 1$, where $a, b, c$ are positive integers, prove tha
 \subsection*{Solution}
 
 \begin{proof}
-	Assume contradiction: if $c^2 = ab$ and $(a, b) = 1$, then $a$ and $b$ are not perfect squares.
+	Since $(a, b) = 1$, no integer can divide both $a$ and $b$. Let $p_{a,i}$ and $p_{b,i}$ be the prime divisor in a set of valid prime divisors $P_a$ and $P_b$ that can divide $a$ and $b$ respectively. Then $a$ and $b$ can be represented in the following way:
 
-	From the second equation, it can be deduced that $a$ and $b$ are coprime, meaning that $a$ does not equal to $b$.
+	\begin{align*}
+		a = \prod_{p_{a,i} \in P_a} p_{a,i}^{n_i} \\
+		b = \prod_{p_{b,i} \in P_b} p_{b,i}^{m_i}
+	\end{align*}
 
-	Square rooting the first equation yields the following equation: $c = \sqrt{ab} = \sqrt{a} \sqrt{b}$. Since $a$ does not equal to $b$, $a$ and $b$ multiplied cannot result in a perfect square. However, since $a$ and $b$ are positive integers, square root of them is irrational. This is a contradiction, as $c$ must also be a positive integer.
+	$n_i$ and $m_i$ are some positive integers that represent the number of prime divisor that make up $a$ and $b$ respectively.
 
-	Therefore, by contradiction, if $c^2 = ab$ and $(a, b) = 1$, $a$ and $b$ are perfect squares.
+	From this, it can be seen that $c^2 = \prod_{p_{a,i} \in P_a} p_{a,i}^{n_i} \prod_{p_{b,i} \in P_b} p_{b,i}^{m_i}$. Using this equation, it can be deduced that all $n_i$ and $m_i$ are even. Note that $P_a \cap P_b$ is a empty set since no prime can divide both $a$ and $b$.
+
+	Since all exponents are even, both $a$ and $b$ are perfect squares.
 \end{proof}
 
 \section*{Problem 9}
@@ -317,17 +321,73 @@ Prove that there are infinitely many primes.
 
 	Consider $n = p_1 p_2 \ldots p_k + 1$. By division algorithm, $n = mq + r$ for some integer $m$ where $q = p_1 p_2 \ldots p_k$ and $r = 1$. This means that $n$ is not divisible by $p_i$ for all $i$ since $r \neq 0$. Since $p_i$ are primes for all $i$, it does not have any factors besides 1 and itself. By extension, all integers less than $n$ cannot divide $n$. Therefore, $n$ is a prime. This is a contradiction.
 
-	The above logic applies to any sets of prime by induction. Therefore, there are infinitely many primes.
 \end{proof}
 
 \section*{Problem 11}
 
+Textbook p24 (34)
+
 \subsection*{Problem Statement}
+
+Prove or disprove: If $n$ is an integer and $n > 2$, then there exists a prime $p$ such
+that $n < p < n!$.
+
 \subsection*{Solution}
+
+\begin{proof}
+	Let $n > 2$. Let $p$ be a prime divisor of $n! - 1$.
+
+	If $p \leq n$ then $p$ divides $n!$. The above assumption shows that $p$ also divides $n! - 1$. Then $n! - (n! - 1) = 1$ must be divisible by $p$ as well. However, this is impossible as 1 is not divisible by any prime. Therefore, $p$ must be greater than $n$.
+
+	Since $p$ is a prime divisor of $n! - 1$, $p \leq n!- 1$, meaning that $p < n!$. Therefore $n < p < n!$.
+\end{proof}
 
 \section*{Problem 12}
 
+Textbook p32 (21.a, 21.b)
+
 \subsection*{Problem Statement}
+
+\begin{enumerate}[label=(\alph*)]
+	\item Show that $10^n \equiv 1 (\bmod 9)$ for every positive $n$.
+	\item Prove that every positive integer is congruent to the sum of its digits $\bmod 9$.
+\end{enumerate}
+
 \subsection*{Solution}
+
+\subsubsection*{(a)}
+
+\begin{align*}
+	10^n (\bmod 9) & \equiv (10 (\bmod 9))^n (\bmod 9) \\
+	               & \equiv (1 (\bmod 9))^n (\bmod 9)  \\
+	               & \equiv 1^n (\bmod 9)              \\
+	               & \equiv 1 (\bmod 9)
+\end{align*}
+
+\subsubsection*{(b)}
+
+\begin{proof}
+	Let $d_0, d_1, d_2, \ldots, d_{m-1}$ be digits of positive integer $N$.
+
+	\begin{align*}
+		N & = d_0 + 10^1 \cdot d_1 + 10^2 \cdot d_2 + \ldots + 10^{m-1} \cdot d_{m-1} \\
+		  & = \sum_{i=0}^{m-1}{10^i \cdot d_i}
+	\end{align*}
+
+	Apply $\bmod 9$ to $N$ to find the consgruence class.
+
+	\begin{align*}
+		\left[ \sum_{i=0}^{m-1}{10^i \cdot d_i} \right] (\bmod 9) & \equiv \left[ \sum_{i=0}^{m-1}{10^i \cdot d_i (\bmod 9)} \right] (\bmod 9)
+	\end{align*}
+
+	From part (a), $10^n \equiv 1 (\bmod 9)$. Applying this results in the following:
+
+	\begin{align*}
+		\left[ \sum_{i=0}^{m-1}{10^i \cdot d_i (\bmod 9)} \right] (\bmod 9) & \equiv \left[ \sum_{i=0}^{m-1}{d_i (\bmod 9)} \right] (\bmod 9) \\
+		                                                                    & \equiv \left[ \sum_{i=0}^{m-1}{d_i} \right] (\bmod 9)
+	\end{align*}
+
+	Therefore, every positive integer is congruent to the sum of its digits $\bmod 9$
+\end{proof}
 
 \end{document}
