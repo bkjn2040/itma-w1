@@ -192,8 +192,53 @@ $q$ must divide $2^{20} - 1$. The largest number that can achieve this is $2^{20
 
 \section*{Problem 6}
 
+Textbook p16 (29)
+
 \subsection*{Problem Statement}
+
+Prove that a positive integer is divisible by 9 if and only if the sum of its digits is divisible by 9.
+
 \subsection*{Solution}
+
+First, we prove that if a positive integer is divisible by 9, its sum of digits is divisble by 9.
+
+\begin{proof}
+	Let $d_0, d_1, d_2, \ldots, d_{n-1}$ be the digits of a $n$ digit positive number $k$ where $k = d_0 + 10^1 \cdot d_1 + 10^2 \cdot d_2 + \ldots + 10^{n-1} \cdot d_{n-1}$. We would like to prove that if 9 divides $k$, 9 divides sum of $d_0, d_1, d_2, \ldots, d_{n-1}$.
+
+
+	$k$ can be reformulated as follows:
+
+	\begin{align*}
+		k & = d_0 + 10^1 \cdot d_1 + 10^2 \cdot d_2 + \ldots + 10^{n-1} \cdot d_{n-1} \\
+		  & = \sum_{i=0}^{n-1}{10^i \cdot d_i}                                        \\
+		  & = \sum_{i=0}^{n-1}{d_i + (10^i - 1) \cdot d_i}                            \\
+		  & = \sum_{i=0}^{n-1}{d_i} + \sum_{i=0}^{n-1}{(10^i - 1) \cdot d_i}          \\
+	\end{align*}
+
+	By factoring $10^i - 1$, $k$ can be further reformulated as follows:
+
+	\begin{align*}
+		k & = \sum_{i=0}^{n-1}{d_i} + \sum_{i=0}^{n-1}{(10^i - 1) \cdot d_i}                                          \\
+		  & = \sum_{i=0}^{n-1}{d_i} + \sum_{i=0}^{n-1}{(10 - 1)(10^{i-1} + 10^{i-2} + \ldots + 10^{1} + 1) \cdot d_i} \\
+		  & = \sum_{i=0}^{n-1}{d_i} + 9 \sum_{i=0}^{n-1}{(10^{i-1} + 10^{i-2} + \ldots + 10^{1} + 1) \cdot d_i}       \\
+	\end{align*}
+
+	Now $k$ is in the form $k = ab + r$, where $r = \sum_{i=0}^{n-1}{d_i}$, $a = 9$, and $b = \sum_{i=0}^{n-1}{(10^{i-1} + 10^{i-2} + \ldots + 10^{1} + 1) \cdot d_i}$. Since 9 divides $k$, 9 also must divide $r$, which is the sum of digits. Therefore, if a positive integer is divisible by 9, sum of its digits are also divisible by 9.
+\end{proof}
+
+Next, we prove that if the sum of a positive integer's digits is divisible by 9, the positive integer is also divisible by 9.
+
+\begin{proof}
+	From previous formulation of $k$, it is established that $k = ab + r$ where $a = 9$. Since $r$ is the sum of digits and can be represented in the form $r = 9p$ for some integer $p$, $k$ can be reformulated as follows:
+
+	\begin{align*}
+		k & = ab + r  \\
+		  & = 9b + 9p \\
+		  & = 9(b+p)
+	\end{align*}
+
+	This shows that $k$ is a multiple of 9, meaning that it is divisible by 9.
+\end{proof}
 
 \section*{Problem 7}
 
