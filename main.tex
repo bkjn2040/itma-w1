@@ -242,13 +242,39 @@ Next, we prove that if the sum of a positive integer's digits is divisible by 9,
 
 \section*{Problem 7}
 
+Textbook p16 (31.b)
+
 \subsection*{Problem Statement}
+
+If $t$ is an integer such that $a_i \mid t$ for $i = 1, 2, ... , k$, prove that $[a_1, a_2, \ldots, a_k] \mid t$.
+
 \subsection*{Solution}
+
+\begin{proof}
+	Let $m = [a_1, a_2, \ldots, a_k]$. By division algorithm, $t = mq + r$. For $t$ to be divisible by $m$, $r$ must be 0.
+
+	For every $i$, let $t = a_i u_i$ and $m = a_i v_i$ since $t$ and $m$ are divisible by $a_i$. By rearranging the equation found by division algorithm, $r = t - mq$. Substituting $t$ and $m$ to this equation results in the following: $r = a_i(u_i - v_i q)$. Therefore, $r$ is divisible by $a_i$ for all $i$
+\end{proof}
 
 \section*{Problem 8}
 
+Textbook p23 (21)
+
 \subsection*{Problem Statement}
+
+If $c^2 = ab$ and $(a, b) = 1$, where $a, b, c$ are positive integers, prove that $a$ and $b$ are perfect squares.
+
 \subsection*{Solution}
+
+\begin{proof}
+	Assume contradiction: if $c^2 = ab$ and $(a, b) = 1$, then $a$ and $b$ are not perfect squares.
+
+	From the second equation, it can be deduced that $a$ and $b$ are coprime, meaning that $a$ does not equal to $b$.
+
+	Square rooting the first equation yields the following equation: $c = \sqrt{ab} = \sqrt{a} \sqrt{b}$. Since $a$ does not equal to $b$, $a$ and $b$ multiplied cannot result in a perfect square. However, since $a$ and $b$ are positive integers, square root of them is irrational. This is a contradiction, as $c$ must also be a positive integer.
+
+	Therefore, by contradiction, if $c^2 = ab$ and $(a, b) = 1$, $a$ and $b$ are perfect squares.
+\end{proof}
 
 \section*{Problem 9}
 
